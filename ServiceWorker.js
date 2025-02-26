@@ -1,9 +1,9 @@
 const cacheName = "Humennyi Yevhenii-The Greatest Canyons in the World-0.1.0";
 const contentToCache = [
     "Build/BUILD.loader.js",
-    "Build/BUILD.framework.js.gz",
-    "Build/BUILD.data.gz",
-    "Build/BUILD.wasm.gz",
+    "Build/BUILD.framework.js",
+    "Build/BUILD.data",
+    "Build/BUILD.wasm",
     "TemplateData/style.css"
 
 ];
