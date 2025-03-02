@@ -2,52 +2,58 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>3D-візуалізація каньйонів світу</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>3D-візуалізація каньйонів світу</title>
+  <style>
+    .content {
+      display: none;
+    }
+  </style>
 </head>
 
 <body onload="showSection('about')">
-    <div class="nav">
-        <div class="web-text">
-          <h3 class="cls-h-3">Курсова робота учня 10-Б класа ДНЛІТ ДМР Гуменного Євгенія</h3>
-        </div>
-        <div class="nav-item">
-          <button onclick="showSection('about')">Інформація</button>
-          <button onclick="showSection('canyons')">Про каньйони</button>
-          <button onclick="showSection('manual')">Методи створення</button>
-          <button onclick="showSection('demonstration')">Демонстрація</button>
-        </div>
+  <div class="nav">
+    <div class="web-text">
+      <h3 class="cls-h-3">Курсова робота учня 10-Б класа ДНЛІТ ДМР Гуменного Євгенія</h3>
     </div>
-    <div id="about" class="content">
-        <header style="border: 1px solid #ddd;">
-          <h1>Добро пожаловать на сайт 3D-візуалізація каньйонів світу</h1>
-        </header>
+    <div class="nav-item">
+      <button onclick="showSection('about')">Інформація</button>
+      <button onclick="showSection('canyons')">Про каньйони</button>
+      <button onclick="showSection('manual')">Методи створення</button>
+      <button onclick="showSection('demonstration')">Демонстрація</button>
     </div>
-    <div id="canyons" class="content">
-      <header style="border: 1px solid #ddd;">
-        <h1>Інформація про каньйони</h1>
-      </header> 
-    </div>
-    <div id="manual" class="content">
-      <header style="border: 1px solid #ddd;">
-        <h1>Методи створення каньйонів</h1>
-      </header>
-      <iframe class="docx-file"src="https://docs.google.com/gview?url=kwodhs.github.io/cwk-2025/canyons_manual.docx&embedded=true"></iframe>
-    </div>
-    <div id="demonstration" class="content">
-      <header style="border: 1px solid #ddd;">
-        <h1>Демонстрація каньйонів</h1>
-      </header>
-      <iframe class="player" src="game.html" width="1280"  height="720"></iframe>
-    </div>
-    <script>
-        function showSection(sectionId) {
-            let sections = document.querySelectorAll('.content');
-            sections.forEach(section => section.style.display = 'none');
-            document.getElementById(sectionId).style.display = 'block';
-        }
-    </script>
+  </div>
+  <div id="about" class="content">
+    <header style="border: 1px solid #ddd;">
+      <h1>Добро пожаловать на сайт 3D-візуалізація каньйонів світу</h1>
+    </header>
+  </div>
+  <div id="canyons" class="content">
+    <header style="border: 1px solid #ddd;">
+      <h1>Інформація про каньйони</h1>
+    </header>
+  </div>
+  <div id="manual" class="content">
+    <header style="border: 1px solid #ddd;">
+      <h1>Методи створення каньйонів</h1>
+    </header>
+    <iframe class="docx-file"
+      src="https://docs.google.com/gview?url=kwodhs.github.io/cwk-2025/canyons_manual.docx&embedded=true"></iframe>
+  </div>
+  <div id="demonstration" class="content">
+    <header style="border: 1px solid #ddd;">
+      <h1>Демонстрація каньйонів</h1>
+    </header>
+    <iframe class="player" src="game.html" width="1280" height="720"></iframe>
+  </div>
+  <script>
+    function showSection(sectionId) {
+      let sections = document.querySelectorAll('.content');
+      sections.forEach(section => section.style.display = 'none');
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
 </body>
 
 </html>

@@ -56,10 +56,6 @@ body {
     color:white
 }
 
-.content {
-    display: none;
-}
-
 .content .docx-file {
     justify-content: center;
     width: 50%;
