@@ -27,14 +27,11 @@ body {
 
 .nav {
     display: inline-block;
-    /* justify-content: right; */
     gap: 20px;
     background: url('./Images/bg_images/navpanel.jpg') no-repeat center center fixed;
     background-size: cover;
-    /* margin: 10px; */
     padding: 10px 0px 10px 0px;
     width: 100%;
-    /* position: fixed; */
     top: 0;
     left: 0;
     z-index: 1000;
@@ -58,7 +55,13 @@ body {
     background: darkred;
     color:white
 }
+
 .content {
-    border-radius: 5px;
+    display: none;
 }
 
+.content .docx-file {
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+}
