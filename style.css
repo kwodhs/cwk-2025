@@ -176,3 +176,10 @@ body {
     padding-right: 5px;
     text-indent: 10px;
 }
+
+.player-about-text img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
