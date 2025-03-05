@@ -183,3 +183,19 @@ body {
     border: 2px solid white;
     border-radius: 5px;
 }
+
+.canyon-features-box {
+    display: inline-grid;
+    justify-items: center;
+    height: 100%;
+    width: 17%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(192, 192, 192, 0.50);
+}
+
+.canyon-features-box img {
+    margin: 2px;
+}
