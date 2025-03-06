@@ -137,7 +137,30 @@ body {
 .player {
     border: 4px solid white;
     border-radius: 5px;
-    justify-content: center;
+    z-index: 2;
+}
+
+.player-cont#btn {
+    display: inline;
+    padding-left: 0px;
+    position: absolute;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border: 0px solid white;
+    border-radius: 10px;
+    margin-left: -4px;
+    z-index: 0;
+    font-size: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    text-align: center;
+    border-left: 4px solid white;
+}
+
+.player-cont#btn:hover {
+    background-color: rgb(170, 170, 170);
+    color: white;
 }
 
 .docx-about-text {
@@ -198,4 +221,67 @@ body {
 
 .canyon-features-box img {
     margin: 2px;
+}
+
+.popup {
+    left: 100%;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    top: 700%;
+}
+  
+.popup .popuptext {
+    visibility: hidden;
+    width: 369px;
+    background-color: rgba(192, 192, 192, 0.50);
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -354px;
+}
+
+.popup .popuptext p{
+    font-size: 15px;
+    text-align: left;
+    padding-left: 10px;
+    text-wrap: auto;
+}
+
+.popup .popuptext h3{
+    text-align: center;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 93%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    rotate: 180deg;
+}
+  
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+  
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }

@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Курсова робота</title>
   <link rel="icon" type="image/x-icon" href="Images/canyon_icon2.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=question_mark" />
   <style>
     .content {
       display: none;
@@ -57,7 +58,7 @@
           <p>Інформація про намальовані каньйони</p>
         </li>
         <li>
-          <p>Методичний матеріал, у якому ви зможете ознайомитись з методикою створення каньйонів</p>
+          <p>Методичний матеріал, у якому ви зможете ознайо митись з методикою створення каньйонів</p>
         </li>
         <li>
           <p>Технічна демонстрація каньйонів. По ним можно ходити, досліджувати їх, або просто милуватись їми</p>
@@ -164,9 +165,20 @@
       </figure>
     </header>
     <hr></hr>
-
-
-    <iframe class="player" src="game.html" width="1280" height="720"></iframe>
+    <div class="player-cont">
+      <iframe class="player" src="game.html" width="1280" height="720"></iframe>
+      <button class="player-cont" id="btn" onclick="showPopup()"><b>?</b>
+        <div class="popup">
+          <span class="popuptext" id="myPopup">
+            <h3>Інструкція</h3>
+            <p>Для переміщення використовуйте клавіші W, A, S, D</p>
+            <p>Для зміни напрямку камери використовуйте мишку</p>
+            <p>Для масштабування поля зору використовуйте колесо миші</p>            
+            <p>Для виходу з гри або паузи натисніть клавішу ESC</p>
+          </span>
+        </div>
+      </button>
+    </div>
 
     <div class="player-about-text">
       <h2>Що ви бачите зверху?</h2>
@@ -250,6 +262,12 @@
       document.getElementById(sectionId).style.display = 'block';
     }
   </script>
+  <script>
+    function showPopup() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
 </body>
 
 </html>
