@@ -224,11 +224,11 @@ body {
 }
 
 .popup {
-    left: 100%;
+    left: 65%;
     position: absolute;
     display: inline-block;
     cursor: pointer;
-    top: 700%;
+    top: 627%;
 }
   
 .popup .popuptext {
