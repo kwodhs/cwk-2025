@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+.empty {
+    height: 49px;
+}
+
 .cls-h-3 {
     display: block;
     float: left;
@@ -12,7 +16,9 @@ body {
 }
 
 .web-text {
-    display: inline-block;
+    display: block;
+    float: left;
+    margin-left: 30px;
     width: 50%;
     border-radius: 5px;
     background: rgba(192, 192, 192, 0.50);
@@ -20,11 +26,11 @@ body {
 }
 
 .web-text img {
-    float: left; 
+    float: left;
     margin-left: 20px;
-    margin-top: 2px; 
-    border: 2px solid white; 
-    border-radius: 5px; 
+    margin-top: 2px;
+    border: 2px solid white;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.467)
 }
 
@@ -46,11 +52,13 @@ body {
     left: 0;
     z-index: 1000;
 }
+
 .nav img {
     justify-content: left;
     text-align: left;
     gap: 10px;
 }
+
 .nav button {
     background: rgba(192, 192, 192, 0.50);
     border: 1px solid white;
@@ -64,7 +72,7 @@ body {
 
 .nav button:hover {
     background: brown;
-    color:white
+    color: white
 }
 
 .content .docx-cont {
@@ -230,7 +238,7 @@ body {
     cursor: pointer;
     top: 627%;
 }
-  
+
 .popup .popuptext {
     visibility: hidden;
     width: 369px;
@@ -245,14 +253,14 @@ body {
     margin-left: -354px;
 }
 
-.popup .popuptext p{
+.popup .popuptext p {
     font-size: 15px;
     text-align: left;
     padding-left: 10px;
     text-wrap: auto;
 }
 
-.popup .popuptext h3{
+.popup .popuptext h3 {
     text-align: center;
 }
 
@@ -267,21 +275,31 @@ body {
     border-color: white transparent transparent transparent;
     rotate: 180deg;
 }
-  
+
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s
 }
-  
+
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
