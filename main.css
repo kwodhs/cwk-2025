@@ -284,6 +284,26 @@ body {
     animation: fadeIn 1s
 }
 
+.right-google-map {
+    display: block;
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.left-google-map {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
     from {
