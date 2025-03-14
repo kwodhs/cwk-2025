@@ -43,6 +43,7 @@ body {
 
 .nav {
     display: inline-block;
+    top: 0%;
     gap: 20px;
     background: url('./Images/bg_images/navpanel.jpg') no-repeat center center fixed;
     background-size: cover;
